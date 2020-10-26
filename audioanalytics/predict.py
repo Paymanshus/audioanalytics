@@ -1,8 +1,11 @@
 import glob
 import os
 import numpy as np
+import pandas as pd
+import keras
 
-x, y = [], []
+from .features import extract_feature
+from .model import pretrained_model_load
 
 emotions = {
     '01': 'neutral',
@@ -22,8 +25,10 @@ def summary():
     print("Summary function will go here")
 
 
-def predict():
-    test_data = np.expand_dims(z, axis=2)
+def predict(file_name):
+    feature = pd.DataFrame(extract_feature(file_name)).T
+
+    test_data = np.expand_dims(feature, axis=2)
 
     loaded_model = pretrained_model_load()
     loaded_model.compile(loss=keras.losses.categorical_crossentropy,

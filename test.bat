@@ -1,2 +1,2 @@
 pip install .
-python misc/test.py
+python extras/test.py

@@ -31,6 +31,7 @@ setup(name='audioanalytics',
           #   "glob",
           #   "os",
           "soundfile",
-          "keras"
+          "keras",
+          "setuptools"
       ],
       )
