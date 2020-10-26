@@ -1,0 +1,3 @@
+include README.md
+include audioanalytics/model.h5
+inclulde audioanalytics/model.json
