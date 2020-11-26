@@ -13,32 +13,32 @@ This is a development build, current active version is at https://pypi.org/proje
 
 1. Importing the Package:
 
-`import audioanalytics`
+```import audioanalytics```
 
 2. Extracting the feature values from the audio file.
 Enter file path first.
 
 
-`file=r'path goes here'  
+```file=r'path goes here'
 from audioanalytics import extract_feature  
-extract_feature(file)`  
+extract_feature(file)```
 
 3. For Model_load
 
-`from audioanalytics import model_load  
-model_load()`  
+```from audioanalytics import model_load  
+model_load()```
 
 4. For Prediction
 
-`from audioanalytics import predict  
-file_path=r'path goes here'  
-predict(file_path)`  
+```from audioanalytics import predict  
+file_path=r'path goes here'
+predict(file_path)```
 
 5. For Summary Report
 
-`from audioanalytics import summary  
+```from audioanalytics import summary  
 file_path=r'path goes here'  
-summary(file_path)`  
+summary(file_path)```
 
 -------------------------------------------------------
 
